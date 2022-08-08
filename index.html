@@ -25,7 +25,7 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body onload="retrieveNotes();">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -33,10 +33,124 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="scheduleContainer">
+        <div class="row">
+          <div class="col-1">
+            9am
+          </div>
+          <textarea id="0" time="9" class="col-10 time-block">
+          
+          </textarea>
+          <button id="save" class="col-1 saveBtn" onclick="saveText('0');">
+          
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            10am
+          </div>
+          <textarea id="1" time="10" class="col-10 time-block">
+          
+          </textarea>
+          <button id="save" class="col-1 saveBtn" onclick="saveText('1');">
+          
+          </button>
+        </div>
       
+        <div class="row">
+          <div class="col-1">
+            11am
+          </div>
+          <textarea id="2" time="11" class="col-10 time-block">
+          
+          </textarea>
+          <button id="save" class="col-1 saveBtn" onclick="saveText('2');">
+          
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            12pm
+          </div>
+          <textarea id="3" time="12" class="col-10 time-block">
+          
+          </textarea>
+          <button id="save" class="col-1 saveBtn" onclick="saveText('3');">
+          
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            1pm
+          </div>
+          <textarea id="4" time="13" class="col-10 time-block">
+          
+          </textarea>
+          <button id="save" class="col-1 saveBtn" onclick="saveText('4');">
+          
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            2pm
+          </div>
+          <textarea id="5" time="14" class="col-10 time-block">
+          
+          </textarea>
+          <button id="save" class="col-1 saveBtn" onclick="saveText('5');">
+          
+          </button>
+        </div>
+        
+        <div class="row">
+          <div class="col-1">
+            3pm
+          </div>
+          <textarea id="6" time="15" class="col-10 time-block">
+          
+          </textarea>
+          <button id="save" class="col-1 saveBtn" onclick="saveText('6');">
+          
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            4pm
+          </div>
+          <textarea id="7" time="17" class="col-10 time-block">
+          
+          </textarea>
+          <button id="save" class="col-1 saveBtn" onclick="saveText('7');">
+          
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            5pm
+          </div>
+          <textarea id="8" time="18" class="col-10 time-block">
+          
+          </textarea>
+          <button id="save" class="col-1 saveBtn" onclick="saveText('8');">
+          
+          </button>
+        </div>
+
+        
+
+        
+        </div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
