@@ -71,7 +71,7 @@ function retrieveNotes(){
         }
         
     }
-
+    
 }
 const TIMESLOTS = 8;
 timeBlockColor();
