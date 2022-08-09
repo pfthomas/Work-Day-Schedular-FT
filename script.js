@@ -27,27 +27,6 @@ function timeBlockColor() {
 }
 
 
-var textContent = [];
-
-
-//give each timeblock the its given hour and the textarea associated with it
-function assignTextEntry() {
-    
-    textContent = localStorage.getItem("savedText");
-    textContent = JSON.parse(textContent);
-
-    for (var i = 0; i < textContent.length; i++) {
-    
-        var hText = textContent[i].text;
-
-        var hour = textContent[i].textHour;
-        $("[time=" + hour + "]").val(hText);
-
-
-    }
-    console.log(textContent);
-
-}
 
 function saveText(id){
     var queryId = `#${id}`;
