@@ -27,7 +27,7 @@ function timeBlockColor() {
 }
 
 
-
+//saves the id value to the local storage for a specific id
 function saveText(id){
     var queryId = `#${id}`;
     var value = $(queryId).val();
@@ -36,9 +36,9 @@ function saveText(id){
 
     var item = localStorage.getItem(id);
     console.log("retrieved item: ", item)
-    //localStorage.setItem("savedText", JSON.stringify(textContent));
+   
 }
-
+//retrieves the notes 
 function retrieveNotes(){ 
     for (let i = 0; i < TIMESLOTS; i++){
         var id = i.toString();
@@ -55,6 +55,3 @@ function retrieveNotes(){
 const TIMESLOTS = 8;
 timeBlockColor();
 retrieveNotes();
-
-
-console.log("bitch");
